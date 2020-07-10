@@ -1,0 +1,535 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans&display=swap");
+@font-face {
+  font-family: "Antonio";
+  src: url("../font/Antonio-Regular.ttf");
+}
+
+body {
+  position: relative;
+}
+
+.header .jumbotron {
+  background: url(../img/header.png);
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  margin-bottom: 0% !important;
+  color: #fff;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 800px) {
+  .header .jumbotron {
+    background: url(../img/header.png);
+    background-size: cover;
+    background-position: center;
+    height: 35vh;
+    margin-bottom: 0% !important;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .header .jumbotron h1 {
+    font-size: 2rem !important;
+  }
+
+  .header .jumbotron p {
+    font-size: 1.2rem !important;
+  }
+
+  .header .jumbotron .quote {
+    margin-top: 0 !important;
+    text-align: left !important;
+  }
+}
+
+.alert {
+  background-color: rgba(0, 0, 0, 1);
+  color: #fff;
+  text-align: center;
+  font-family: "Antonio";
+  font-size: 1.8rem;
+  letter-spacing: 10px;
+}
+
+.nav-item {
+  width: 50% !important;
+  text-align: center !important;
+}
+
+.nav-pills {
+  margin-top: 2rem !important;
+  margin-bottom: 2rem !important;
+}
+
+.nav-pills .nav-item a {
+  color: rgb(116, 116, 116) !important;
+  font-family: "Antonio";
+  font-size: 1.5rem;
+  letter-spacing: 10px;
+}
+
+.nav-pills .nav-link.active {
+  color: black !important;
+  background-color: transparent !important;
+  border-bottom: 2px solid rgb(184, 184, 184) !important;
+  border-radius: 0 !important;
+  font-weight: 500;
+}
+
+.row {
+  margin: 15px;
+}
+
+#more {
+  display: none;
+}
+
+#mor {
+  display: none;
+}
+
+button {
+  font-family: "Antonio";
+  font-size: 1.5rem;
+  border: 1px solid black !important;
+  border-radius: 0 !important;
+  color: rgba(255, 255, 255, 0.5) !important;
+  background-color: rgba(0, 0, 0, 1);
+  padding: 0.3rem 0.7rem 0.3rem 0.7rem !important;
+  letter-spacing: 2px;
+}
+
+button:hover {
+  color: rgba(255, 255, 255, 0.8) !important;
+}
+
+.internship {
+  margin-top: 100px;
+}
+
+.internship h1 {
+  margin-bottom: 50px;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px #24232365;
+  font-family: "Josefin Sans", sans-serif;
+}
+.internship h1:before,
+.internship h1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+.internship h1:before {
+  right: 0.5em;
+  margin-left: -100%;
+}
+.internship h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.internship .card {
+  box-shadow: 2px 2px 5px 2px #888888;
+}
+
+.internship .card-footer {
+  text-align: center !important;
+}
+
+.internship .card-title {
+  color: rgb(65, 65, 65) !important;
+}
+
+.software {
+  margin-top: 80px;
+}
+
+.software h1 {
+  margin-bottom: 50px;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px #24232365;
+  font-family: "Josefin Sans", sans-serif;
+}
+.software h1:before,
+.software h1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+.software h1:before {
+  right: 0.5em;
+  margin-left: -100%;
+}
+.software h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.about .jumbotron {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: rgba(0, 0, 0, 1);
+  color: white;
+  margin-top: 100px;
+}
+
+.contact {
+  margin-top: 80px;
+}
+
+.contact h1 {
+  margin-bottom: 50px;
+  font-family: "Josefin Sans", sans-serif;
+  overflow: hidden;
+  text-align: center;
+  text-transform: uppercase;
+  text-shadow: 2px 2px 10px #000000b2;
+}
+.contact h1:before,
+.contact h1:after {
+  background-color: #000;
+  content: "";
+  display: inline-block;
+  height: 3px;
+  position: relative;
+  vertical-align: middle;
+  width: 100%;
+}
+.contact h1:before {
+  right: 0.5em;
+  margin-left: -100%;
+}
+.contact h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.contact .info {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .info i {
+  font-size: 20px;
+  color: #000000;
+  float: left;
+  width: 44px;
+  height: 44px;
+  background: #eef7ff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+.contact .info h4 {
+  padding: 0 0 0 60px;
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 5px;
+  color: #000000;
+}
+
+.contact .info p {
+  padding: 0 0 0 60px;
+  margin-bottom: 0;
+  font-size: 14px;
+  color: #000000;
+}
+
+.contact .info .email,
+.contact .info .phone {
+  margin-top: 40px;
+}
+
+.contact .info .email:hover i,
+.contact .info .address:hover i,
+.contact .info .phone:hover i {
+  background: #000000;
+  color: #fff;
+}
+
+.contact .php-email-form {
+  width: 100%;
+  background: #fff;
+}
+
+.contact .php-email-form .form-group {
+  padding-bottom: 8px;
+}
+
+.contact .php-email-form .validate {
+  display: none;
+  color: red;
+  margin: 0 0 15px 0;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.contact .php-email-form .error-message {
+  display: none;
+  color: #fff;
+  background: #ed3c0d;
+  text-align: left;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .error-message br + br {
+  margin-top: 25px;
+}
+
+.contact .php-email-form .sent-message {
+  display: none;
+  color: #fff;
+  background: #18d26e;
+  text-align: center;
+  padding: 15px;
+  font-weight: 600;
+}
+
+.contact .php-email-form .loading {
+  display: none;
+  background: #fff;
+  text-align: center;
+  padding: 15px;
+}
+
+.contact .php-email-form .loading:before {
+  content: "";
+  display: inline-block;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  margin: 0 10px -6px 0;
+  border: 3px solid #18d26e;
+  border-top-color: #eee;
+  -webkit-animation: animate-loading 1s linear infinite;
+  animation: animate-loading 1s linear infinite;
+}
+
+.contact .php-email-form input,
+.contact .php-email-form textarea {
+  border-radius: 4px;
+  box-shadow: none;
+  font-size: 14px;
+}
+
+.contact .php-email-form input {
+  height: 44px;
+}
+
+.contact .php-email-form textarea {
+  padding: 10px 12px;
+}
+
+.contact .php-email-form button[type="submit"] {
+  background: #000000;
+  border: 0;
+  padding: 10px 35px;
+  color: #fff;
+  transition: 0.4s;
+  border-radius: 50px;
+}
+
+.contact .php-email-form button[type="submit"]:hover {
+  background: #000000;
+}
+
+/*FOOTER*/
+
+footer {
+  background: #16222a;
+  background: #000000;
+  background: #000000;
+  color: white;
+  margin-top: 50px;
+}
+
+footer a {
+  color: #fff;
+  font-size: 14px;
+  transition-duration: 0.2s;
+}
+
+footer a:hover {
+  color: #fa944b;
+  text-decoration: none;
+}
+
+.copy {
+  font-size: 12px;
+  padding: 10px;
+  border-top: 1px solid #ffffff;
+}
+
+.footer-middle {
+  padding-top: 2em;
+  color: white;
+}
+
+/*SOCİAL İCONS*/
+
+/* footer social icons */
+
+ul.social-network {
+  list-style: none;
+  display: inline;
+  margin-left: 0 !important;
+  padding: 0;
+}
+
+ul.social-network li {
+  display: inline;
+  margin: 0 5px;
+}
+
+/* footer social icons */
+
+.social-network a.icoFacebook:hover {
+  background-color: #3b5998;
+}
+
+.social-network a.icoLinkedin:hover {
+  background-color: #007bb7;
+}
+
+.social-network a.icoInstagram:hover {
+  background: -moz-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: -webkit-linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+  background: linear-gradient(
+    45deg,
+    #f09433 0%,
+    #e6683c 25%,
+    #dc2743 50%,
+    #cc2366 75%,
+    #bc1888 100%
+  );
+}
+
+.social-network a.icoFacebook:hover i,
+.social-network a.icoLinkedin:hover i {
+  color: #fff;
+}
+
+.social-network a.socialIcon:hover,
+.socialHoverClass {
+  color: #44bcdd;
+}
+
+.social-circle li a {
+  display: inline-block;
+  position: relative;
+  margin: 0 auto 0 auto;
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  font-size: 15px;
+}
+
+.social-circle li i {
+  margin: 0;
+  line-height: 30px;
+  text-align: center;
+}
+
+.social-circle li a:hover i,
+.triggeredHover {
+  -moz-transform: rotate(360deg);
+  -webkit-transform: rotate(360deg);
+  -ms--transform: rotate(360deg);
+  transform: rotate(360deg);
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  -o-transition: all 0.2s;
+  -ms-transition: all 0.2s;
+  transition: all 0.2s;
+}
+
+.social-circle i {
+  color: #595959;
+  -webkit-transition: all 0.8s;
+  -moz-transition: all 0.8s;
+  -o-transition: all 0.8s;
+  -ms-transition: all 0.8s;
+  transition: all 0.8s;
+}
+
+.social-network a {
+  background-color: #f9f9f9;
+}
+
+@media (max-width: 800px) {
+  .internship h1 {
+    font-size: 2rem !important;
+  }
+  .internship h1:before {
+    right: 0.5em;
+    margin-left: -100%;
+  }
+  .internship h1:after {
+    left: 0.5em;
+    margin-right: -100%;
+  }
+  .software h1 {
+    font-size: 2rem !important;
+  }
+  .software h1:before {
+    right: 0.5em;
+    margin-left: -100%;
+  }
+  .software h1:after {
+    left: 0.5em;
+    margin-right: -100%;
+  }
+  .contact h1 {
+    font-size: 2rem !important;
+  }
+  .contact h1:before {
+    right: 0.5em;
+    margin-left: -100%;
+  }
+  .contact h1:after {
+    left: 0.5em;
+    margin-right: -100%;
+  }
+  .alert {
+    font-size: 1.5rem;
+  }
+  .nav-pills .nav-item a {
+    font-size: 1.3rem;
+    letter-spacing: 7px;
+  }
+}
